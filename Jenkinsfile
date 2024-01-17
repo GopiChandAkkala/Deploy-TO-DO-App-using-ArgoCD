@@ -1,23 +1,11 @@
 pipeline {
-    agent any
-
-    
+    agent any    
     environment {        
         DOCKERHUB_CREDENTIALS = credentials('dockerhub')        
     }
     
     stages{        
 
-        stage("Git Checkout") {            
-            steps {
-                script {
-                    gitCheckout(
-                        branch: "main",
-                        url: "https://github.com/GopiChandAkkala/Deploy-TO-DO-App-using-ArgoCD.git"
-                    )
-                }
-            }
-        }
         
         stage('Npm'){          
             steps{
