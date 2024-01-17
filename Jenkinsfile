@@ -1,11 +1,17 @@
 pipeline {
-    agent any    
+    agent any
+
+    tools{
+        
+        nodejs 'node16'
+    }
     environment {        
         DOCKERHUB_CREDENTIALS = credentials('dockerhub')        
     }
     
     stages{        
 
+        
         
         stage('Npm'){          
             steps{
