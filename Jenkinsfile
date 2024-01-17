@@ -9,14 +9,7 @@ pipeline {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub')        
     }
     
-    stages{
-        stage("Clean WorkSpace") {            
-            steps {
-                script {
-                    clearWorkspace()
-                }
-            }
-        }
+    stages{        
 
         stage("Git Checkout") {            
             steps {
