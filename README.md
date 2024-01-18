@@ -6,11 +6,10 @@ First create a EKS cluster either by using Terraform or by AWS console or just b
 
 ## Using Terraform:
 
+Find the source code for the terraform configuration [here](https://github.com/GopiChandAkkala/AWS-EKS-using-Terraform-Modules.git)
 ```bash
 # Use Terraform to define your EKS cluster configuration.
 
-Find the source code for the terraform configuration [here](https://github.com/GopiChandAkkala/AWS-EKS-using-Terraform-Modules.git)
-[I'm an inline-style link](https://www.google.com)
 terraform init
 terraform apply
 ```
@@ -25,8 +24,10 @@ terraform apply
 
 ## Using EKSctl:
 
+
+Install EKSctl AWS.
+
+Run the following command to create an EKS cluster:
 ```bash
-# Install EKSctl on your local machine.
-# Run the following command to create an EKS cluster:
 eksctl create cluster --name your-cluster-name --region your-region
 ```
