@@ -10,7 +10,7 @@ First create a EKS cluster either by using Terraform or by AWS console or just b
 # Use Terraform to define your EKS cluster configuration.
 
 Find the source code for the terraform configuration [here](https://github.com/GopiChandAkkala/AWS-EKS-using-Terraform-Modules.git)
-
+[I'm an inline-style link](https://www.google.com)
 terraform init
 terraform apply
 ```
